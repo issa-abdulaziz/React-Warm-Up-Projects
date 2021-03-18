@@ -135,7 +135,7 @@ p {
 }
 .btn {
   background: var(--clr-primary-5);
-  display: inline-block;
+  display: block;
   padding: 0.25rem 0.5rem;
   border-radius: var(--radius);
   text-transform: capitalize;
@@ -143,6 +143,87 @@ p {
   letter-spacing: var(--spacing);
   border-color: transparent;
   cursor: pointer;
-  margin-top: 2rem;
+  margin: 2rem auto 0;
   font-size: 1.2rem;
+}
+/*
+=============== 
+Tours
+===============
+*/
+.app {
+  width: 90vw;
+  margin: 5rem auto;
+}
+.app__title {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+.loading {
+  text-align: center;
+  margin-top: 5rem;
+}
+.app__tours {
+  max-width: 600px;
+  margin: 0 auto;
+}
+.tour {
+  border-radius: var(--radius);
+  box-shadow: var(--light-shadow);
+  background-color: white;
+  transition: var(--transition);
+  margin: 2rem 0;
+  overflow: hidden;
+}
+.tour:hover {
+  box-shadow: var(--dark-shadow);
+}
+.tour > img {
+  width: 100%;
+  height: 20rem;
+  object-fit: cover;
+}
+.tour__details {
+  padding: 1.5rem 2rem;
+}
+.tour__details__top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1.5rem;
+}
+.tour__title {
+  margin-bottom: 0;
+}
+.tour__price {
+  color: var(--clr-primary-5);
+  margin-bottom: 0;
+}
+.tour__info {
+  text-align: justify;
+}
+.tour__showMore {
+  background-color: transparent;
+  color: var(--clr-primary-5);
+  border-color: transparent;
+  text-transform: capitalize;
+  font-size: 1rem;
+  padding-left: 0.25rem;
+  cursor: pointer;
+}
+.tour__button {
+  display: block;
+  margin: 1rem auto 0 auto;
+  color: var(--clr-red-dark);
+  border: 1px solid var(--clr-red-dark);
+  background: transparent;
+  letter-spacing: var(--spacing);
+  padding: 0.25rem 0.5rem;
+  width: 200px;
+  border-radius: var(--radius);
+  transition: var(--transition);
+}
+.tour__button:hover {
+  background-color: var(--clr-red-dark);
+  color: white;
 }
